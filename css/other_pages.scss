@@ -1,0 +1,75 @@
+$primary_color : #2beec3;
+$secondary_color: #f52551;
+$gray : #1b1b1b;
+$dark_gray: #131313;
+
+.projects, .contact{
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.contact{
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-container{
+  position: relative;
+  width: 75%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: $primary_color;
+}
+
+
+.project-container:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.github-link{
+  color: black !important;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.contact-item{
+  text-align:center;
+}
+.contact-icon{
+  width: 30%;
+}
+.contact-text{
+  text-align:center;
+}
