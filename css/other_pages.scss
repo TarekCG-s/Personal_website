@@ -73,3 +73,10 @@ $dark_gray: #131313;
 .contact-text{
   text-align:center;
 }
+@media only screen and (max-width: 600px) {
+
+  .contact{
+    grid-template-columns: 1fr;
+  }
+
+}
