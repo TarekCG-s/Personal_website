@@ -113,7 +113,7 @@ body {
 
 .btn:hover, .btn-outline-info:hover {
   background: #2beec3 !important;
-  color: #f52551 !important;
+  color: white !important;
 }
 
 .fab {
